@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>StatCheck</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/base.css">
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/base.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/stats.js"></script>
+</head>
+
+<body>
+
+  <form class='search-form' action="#">
+    <div class="searchBox-fakeInput">
+      <div class="searchBox-inputWrapper">
+        <input type="text" class="form-control searchBox-input js-searchBox-input" placeholder="Search">
+      </div>
+      <div class="searchBox-clearWrapper">
+        <!-- close icon can be easily swapped out for an icon font -->
+        <span class="searchBox-clear js-clearSearchBox">&#10005;</span>
+      </div>
+    </div>
+    <div class='search-autocomplete'>
+    </div>
+  </form>
+  <div class='stats-container'>
+    <table class='nba-stats-total bordered'>
+      <thead>
+        <tr>
+          <th>Season</th>
+          <th>Team</th>
+          <th>GP</th>
+          <th>GS</th>
+          <th>MP</th>
+          <th>FGM</th>
+          <th>FGA</th>
+          <th>FG%</th>
+          <th>3PM</th>
+          <th>3PA</th>
+          <th>3P%</th>
+          <th>2PM</th>
+          <th>2PA</th>
+          <th>2P%</th>
+          <th>FTM</th>
+          <th>FTA</th>
+          <th>FT%</th>
+          <th>oRB</th>
+          <th>dRB</th>
+          <th>tRB</th>
+          <th>AST</th>
+          <th>STL</th>
+          <th>BLK</th>
+          <th>TO</th>
+          <th>PF</th>
+          <th>Points</th>
+          <!-- more columns are possible -->
+        </tr>
+      </thead>
+      <tbody class='total-stats-table-body'>
+
+        <!-- more rows are possible -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>

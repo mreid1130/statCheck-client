@@ -1,0 +1,100 @@
+/* Generic styles */
+
+form.search-form {
+  width: 30rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+
+/* eof Generic styles */
+
+.searchBox-fakeInput {
+  background: white;
+  border: 1px solid #d6dadc;
+  border-radius: 3px;
+  display: table;
+}
+
+.searchBox-inputWrapper, .searchBox-clearWrapper {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.searchBox-input {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: inherit;
+}
+
+.searchBox-input:focus {
+  outline: none;
+  background: #FFF;
+  box-shadow: none;
+}
+
+.searchBox-clearWrapper {
+  font-size: 0.75em;
+  padding-right: 0.5rem;
+}
+
+.searchBox-clear {
+  color: #CCC;
+  padding: 0;
+  cursor: pointer;
+  font-size: inherit;
+  cursor: pointer;
+  line-height: 1.5;
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchBox-clearInput:hover {
+  color: #AAA;
+}
+
+.search-autocomplete {
+  width: 100%;
+}
+
+.search-autocomplete-result {
+  position: relative;
+  width: 30rem;
+  cursor: pointer;
+  display: block;
+  background: white;
+  z-index: 10;
+}
+
+.transparent-result-overlay {
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.search-autocomplete-result:hover {
+  background: #ADD8E6
+}
+
+.search-autocomplete-result.active {
+  background: #ADD8E6
+}
+
+.search-autocomplete img.player-photo {
+  display: inline-block;
+  height: 66.5px;
+  width: 70px;
+}
