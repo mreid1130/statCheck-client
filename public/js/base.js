@@ -42,7 +42,7 @@ $(document).ready(() => {
       var getNames = () => {
         return $.ajax({
           type: "GET",
-          url: 'http://localhost:5000/nba/players/' + $('.js-searchBox-input').val(),
+          url: 'https://gentle-basin-8178.herokuapp.com/nba/players/' + $('.js-searchBox-input').val(),
         });
       };
       $('.search-autocomplete').css('border', '');
@@ -70,7 +70,7 @@ $(document).ready(() => {
                 $('.nba-stats-total').css('display', 'none');
                 return $.ajax({
                   type: "GET",
-                  url: 'http://localhost:5000/nba/player/' + $(e.target).parent().data('id')
+                  url: 'https://gentle-basin-8178.herokuapp.com/nba/player/' + $(e.target).parent().data('id')
                 });
               };
               getPlayer().done((data) => {
@@ -155,7 +155,7 @@ $(document).ready(() => {
             $('.nba-stats-total').css('display', 'none');
             return $.ajax({
               type: "GET",
-              url: 'http://localhost:5000/nba/player/' + $('.search-autocomplete-result').data('id')
+              url: 'https://gentle-basin-8178.herokuapp.com/nba/player/' + $('.search-autocomplete-result').data('id')
             });
           };
         } else {
@@ -166,7 +166,7 @@ $(document).ready(() => {
               $('.nba-stats-total').css('display', 'none');
               return $.ajax({
                 type: "GET",
-                url: 'http://localhost:5000/nba/player/' + $('.search-autocomplete-result.active').data('id')
+                url: 'https://gentle-basin-8178.herokuapp.com/nba/player/' + $('.search-autocomplete-result.active').data('id')
               });
             };
           }
